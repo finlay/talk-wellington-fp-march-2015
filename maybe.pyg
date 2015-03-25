@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZhy{}\PYZhy{} Maybe :: a \PYZhy{}\PYZgt{} Maybe a }
+\PY{k+kr}{data} \PY{k+kt}{Maybe} \PY{n}{a} \PY{o+ow}{=} \PY{k+kt}{Just} \PY{n}{a} \PY{o}{|} \PY{k+kt}{Nothing}
+\end{Verbatim}

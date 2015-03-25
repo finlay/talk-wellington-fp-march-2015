@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZhy{}\PYZhy{} Take a name, and capitalise the words in it}
+\PY{n+nf}{formatName} \PY{o+ow}{::} \PY{k+kt}{String} \PY{o+ow}{\PYZhy{}\PYZgt{}} \PY{k+kt}{String}
+\PY{n+nf}{formatName} \PY{o+ow}{=} \PY{n}{unwords} \PY{o}{.} \PY{n}{map} \PY{n}{capitalise} \PY{o}{.} \PY{n}{words} 
+
+\PY{c+c1}{\PYZhy{}\PYZhy{} Now allow for names that might not be there}
+\PY{c+c1}{\PYZhy{}\PYZhy{} for example from an optional input html field}
+\PY{n+nf}{fn} \PY{o+ow}{=} \PY{n}{fmap} \PY{n}{formatName}
+
+\PY{n+nf}{fn} \PY{p}{(}\PY{k+kt}{Just} \PY{l+s}{\PYZdq{}}\PY{l+s}{haskell CURRY}\PY{l+s}{\PYZdq{}}\PY{p}{)}  \PY{c+c1}{\PYZhy{}\PYZhy{} \PYZgt{} Just \PYZdq{}Haskell Curry\PYZdq{}}
+\PY{n+nf}{fn} \PY{k+kt}{Nothing}                 \PY{c+c1}{\PYZhy{}\PYZhy{} \PYZgt{} Nothing}
+\end{Verbatim}

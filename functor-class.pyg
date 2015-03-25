@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{k+kr}{class} \PY{k+kt}{Functor} \PY{n}{m} \PY{k+kr}{where}
+    \PY{n}{fmap} \PY{o+ow}{::} \PY{p}{(}\PY{n}{a} \PY{o+ow}{\PYZhy{}\PYZgt{}} \PY{n}{b}\PY{p}{)} \PY{o+ow}{\PYZhy{}\PYZgt{}} \PY{n}{m} \PY{n}{a} \PY{o+ow}{\PYZhy{}\PYZgt{}} \PY{n}{m} \PY{n}{b}
+\end{Verbatim}

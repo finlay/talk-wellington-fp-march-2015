@@ -18,6 +18,22 @@
   \end{frame}
 }
 
+\input{pygmentize.tex}
+
+\usepackage{framed}
+\renewenvironment{leftbar}[1][\hsize]
+{% 
+\def\FrameCommand 
+{%
+
+    {\color{lightgray}\vrule width 3pt}%
+    \hspace{0pt}%must no space.
+    \fboxsep=\FrameSep\colorbox{white}%
+}%
+\MakeFramed{\hsize#1\advance\hsize-\width\FrameRestore}%
+}
+{\endMakeFramed}
+
 \begin{document}
 
 \titleslide
@@ -293,25 +309,133 @@
 
 \end{frame}
 
-\section{Programming patterns}
+\section{Programming in patterns}
 
 \begin{frame}{}{}
 
+    {\Large The history of computer programming has involved the discovering patterns.}
+
+    \pause\bigskip
+    Subroutines emerged as a pattern from assembly and fortran, and became the central concept in C. 
+
+    \pause\bigskip
+    Associating functions with structs emerged as a pattern in C, and became object classes in C++.  
+
+    \pause\bigskip
+    Numerous patterns have emerged from mainstream object-oriented languages such as Java, C\#, and C++.
 
 \end{frame}
 
-\section{Functors}
+\begin{frame}{}{}
+
+    {\Large Category theory provides Haskell with patterns.}
+
+    \pause\bigskip
+    The Haskell language has it's origins in the lambda calculus, and is strongly influenced by ideas category theory.
+
+    \pause\bigskip
+    The Haskell community draws on category theory to provide programming patterns.
+
+    \pause\bigskip
+    They \emph{tend} to be good patterns, with good performance characteristics, and general enough to be useful.
+
+\end{frame}
+
+\section{Pattern: Functors}
 
 \begin{frame}{}{}
 
+    {\Large Functors are arrows between categories.}
+
+    \pause\bigskip
+    \begin{definition}
+        A Functor $F : C \to D$ consists of
+        \begin{itemize}
+            \item A map $F: Obj(C) \to Obj(D)$,
+            \item $\forall\ X,Y\in Obj(C)$, a map $F: C(X,Y) \to D(FX, FY)$
+        \end{itemize}
+        Such that
+        \begin{itemize}
+            \item $\forall\ X\in C$, then $ F(id_X) = id_{FX} $
+            \item $\forall\ f:X\to Y, g:Y\to Z$, then $ F(g \circ f) = F(g) \circ F(f) $
+        \end{itemize}
+    \end{definition}
+
+\end{frame}
+
+\begin{frame}[fragile]{}{}
+
+    {\Large User defined data types in Haskell }
+
+    \pause\bigskip
+    The \textbf{data} keyword creates new data types in Haskell. 
+    
+    \pause\bigskip
+    They can take other types as parameters, creating mappings from Haskell types to Haskell types, the beginning of a Functor.
+
+    \pause\bigskip
+    For example, the maybe type allows for ``nullable'' types.
+    \begin{leftbar}
+    \input{maybe.pyg}
+    \end{leftbar}
+
+\end{frame}
+
+\begin{frame}[fragile]{}{}
+
+    {\Large Functors modify the arrows too.}
+
+    \pause\bigskip
+    \begin{leftbar}
+        \input{functor-class.pyg}
+    \end{leftbar}
+
+    \pause\bigskip
+    \begin{leftbar}
+        \input{functor-instance.pyg}
+    \end{leftbar}
+
+\end{frame}
+
+\begin{frame}[fragile]{}{}
+
+    \begin{leftbar}
+        \input{functor-example.pyg}
+    \end{leftbar}
+
+\end{frame}
+
+\begin{frame}[fragile]{}{}
+
+    {\Large The Functor pattern successfully separates concerns}
+
+    \pause\bigskip
+    Define a function that does something in your domain.
+
+    \pause\bigskip
+    Separately, define a Functor instance for a wrapper data type.
+
+    \pause\bigskip
+    Use the wrapped values as if they were not wrapped!
 
 \end{frame}
 
 
-\section{Monads}
 
 \begin{frame}{}{}
 
+{\Large Further reading}
+
+The official Haskell website is good \\
+\url{https://www.haskell.org/}
+\bigskip
+
+Newish book all about the Maybe data type\\
+\url{https://gumroad.com/l/maybe-haskell/}
+\bigskip
+
+Good series of blog posts on category theory\\
+\url{ http://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/}
 
 \end{frame}
 

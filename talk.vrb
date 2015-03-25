@@ -1,0 +1,13 @@
+\frametitle{}\framesubtitle {}
+
+    {\Large The Functor pattern successfully separates concerns}
+
+    \pause\bigskip
+    Define a function that does something in your domain.
+
+    \pause\bigskip
+    Separately, define a Functor instance for a wrapper data type.
+
+    \pause\bigskip
+    Use the wrapped values as if they were not wrapped!
+

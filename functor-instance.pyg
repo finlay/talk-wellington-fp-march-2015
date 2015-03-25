@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{k+kr}{instance} \PY{k+kt}{Functor} \PY{k+kt}{Maybe} \PY{k+kr}{where}
+    \PY{n}{fmap} \PY{n}{f} \PY{p}{(}\PY{k+kt}{Just} \PY{n}{x}\PY{p}{)} \PY{o+ow}{=} \PY{k+kt}{Just} \PY{p}{(}\PY{n}{f} \PY{n}{x}\PY{p}{)}
+    \PY{n}{fmap} \PY{k+kr}{\PYZus{}} \PY{k+kt}{Nothing}  \PY{o+ow}{=} \PY{k+kt}{Nothing}
+\end{Verbatim}
