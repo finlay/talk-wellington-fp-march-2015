@@ -212,6 +212,84 @@
 
 \begin{frame}{}{}
 
+    \centering
+    \only<1>{\includegraphics[width=0.7\textwidth]{images/two-dots-01.png}}
+
+    \only<2>{\includegraphics[width=0.7\textwidth]{images/two-dots-02.png}}
+
+\end{frame}
+
+\begin{frame}{}{}
+
+    {\Large Category theory is all about arrows. }
+
+    \pause\bigskip
+    Need to define what the \textbf{objects} are.
+
+    \pause\bigskip
+    Between two objects, there are \textbf{arrows}. 
+
+    \pause\bigskip
+    There are some rules, more on that later.
+
+\end{frame}
+
+\begin{frame}{}{}
+
+    {\Large Programming involves defining arrows.}
+
+    \pause\bigskip
+    The objects in the programming category are \textbf{types}. Types are sets of values.
+
+    \pause\bigskip
+    Writing functions in a programming language involves defining arrows between data types. 
+
+    \pause\bigskip
+    Haskell emphasises category theory aspect of programming.
+
+\end{frame}
+
+\begin{frame}{}{}
+
+    \emph{Warning, philosophical musing ahead...}
+
+    \pause\bigskip
+    Category theory is \textbf{about} the common patterns that emerge when we consider diagrams of objects and arrows.
+
+    \pause\bigskip
+    A category defines some kind of objects, and the way we can transform these objects into each other. It is a very general concept, and so almost completely vacuous.
+
+    \pause\bigskip
+    As is often the case with mathematical concepts, there is nothing more than the definitions.
+
+\end{frame}
+
+\begin{frame}{}{}
+
+    \begin{columns}
+    \column{0.75\textwidth}
+    
+    \begin{definition}
+        A category $C$ consists of
+        \begin{itemize}
+            \item a class of objects $Obj(C)$, 
+            \item $\forall X,Y\in Obj(C)$, $\exists\ $ a class of arrows $C(X,Y)$.
+            \item $\forall f:X\to Y$, and $g:Y \to Z$, $\exists\ g\circ f:X \to Z$.
+        \end{itemize}
+        Such that
+        \begin{itemize}
+            \item $\forall X\in Obj(C)$, $\exists\ id_X: X \to X$,
+            \item $\forall f:X\to Y$, then 
+                $$ f \circ id_X = f = id_Y \circ f $$
+            \item $\forall f:X\to Y$, $g:Y \to Z$, and $h:Z \to W$, then
+                $$ (h \circ g) \circ f = h \circ (g \circ f) $$
+        \end{itemize}
+    \end{definition}
+
+
+    \column{0.25\textwidth}
+    \includegraphics[width=\textwidth]{images/Commutative_diagram_for_morphism.png}
+    \end{columns}
 
 \end{frame}
 
