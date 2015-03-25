@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448"
+   height="524.40942"
+   id="svg5542"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="haskell-code.svg"
+   inkscape:export-filename="/home/finlay/dragonfly/talk-wellington-fp-march-2015/images/haksell-code-04.png"
+   inkscape:export-xdpi="160"
+   inkscape:export-ydpi="160">
+  <defs
+     id="defs5544" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.8747619"
+     inkscape:cx="372.04724"
+     inkscape:cy="363.08228"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer9"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5547">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-527.95272)">
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu Mono;-inkscape-font-specification:Ubuntu Mono"
+       x="59.999996"
+       y="703.79071"
+       id="text5550"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5552"
+         x="59.999996"
+         y="703.79071">capitalise :: String -&gt; String</tspan><tspan
+         sodipodi:role="line"
+         x="59.999996"
+         y="753.79071"
+         id="tspan5554">capitalise [] = []</tspan><tspan
+         sodipodi:role="line"
+         x="59.999996"
+         y="803.79071"
+         id="tspan5556">capitalise (a:as)  </tspan><tspan
+         sodipodi:role="line"
+         x="59.999996"
+         y="853.79071"
+         id="tspan5560">  = (toUpper a : map toLower as)</tspan><tspan
+         sodipodi:role="line"
+         x="59.999996"
+         y="903.79071"
+         id="tspan5558" /></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="function"
+     style="display:inline">
+    <rect
+       style="fill:#ff5900;fill-opacity:0.31372549;stroke:none"
+       id="rect5563"
+       width="214.28571"
+       height="37.14286"
+       x="55"
+       y="145.1237" />
+    <rect
+       style="fill:#ff5900;fill-opacity:0.31372549;stroke:none"
+       id="rect5563-9"
+       width="214.28571"
+       height="37.14286"
+       x="56.428577"
+       y="193.69513" />
+    <rect
+       style="fill:#ff5900;fill-opacity:0.31372549;stroke:none"
+       id="rect5563-3"
+       width="214.28571"
+       height="37.14286"
+       x="56.428577"
+       y="244.40942" />
+    <text
+       xml:space="preserve"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff5900;fill-opacity:0.85714285;stroke:none;display:inline;font-family:Comic Sans MS;-inkscape-font-specification:Comic Sans MS"
+       x="174.28865"
+       y="82.83828"
+       id="text3004"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3006"
+         x="174.28865"
+         y="82.83828">this is the function</tspan></text>
+    <path
+       style="fill:none;stroke:#ff5900;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.31372549;stroke-dasharray:none"
+       d="m 170,75.123709 c 0,0 -33.54334,-5.403986 -49.28571,10 -15.74238,15.403981 -12.85715,60.000001 -12.85715,60.000001"
+       id="path6121"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="czc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer8"
+     inkscape:label="domain"
+     style="display:inline">
+    <rect
+       style="fill:#0069ff;fill-opacity:0.4745098;stroke:none"
+       id="rect6124"
+       width="140"
+       height="42.142857"
+       x="330"
+       y="145.1237" />
+    <text
+       xml:space="preserve"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0069ff;fill-opacity:0.73660715;stroke:none;display:inline;font-family:Comic Sans MS;-inkscape-font-specification:Comic Sans MS"
+       x="389.50488"
+       y="129.24634"
+       id="text4785"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4787"
+         x="389.50488"
+         y="129.24634">from text</tspan></text>
+    <path
+       style="fill:none;stroke:#0069ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.4745098;stroke-dasharray:none"
+       d="m 386.81109,117.89419 c 0,0 -11.38856,-1.23571 -19.17059,7.6987 -7.78204,8.93441 -5.70685,19.6608 -5.70685,19.6608"
+       id="path6147"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="czc" />
+    <rect
+       style="fill:none;stroke:#0069ff;stroke-width:3.00029993;stroke-miterlimit:4;stroke-opacity:0.4745098;stroke-dasharray:3.0003, 3.0003;stroke-dashoffset:0"
+       id="rect6149"
+       width="42.931484"
+       height="41.921329"
+       x="278.80209"
+       y="195.0997" />
+    <rect
+       style="fill:none;stroke:#0069ff;stroke-width:3.00029993;stroke-miterlimit:4;stroke-opacity:0.4745098;stroke-dasharray:3.0003, 3.0003;stroke-dashoffset:0"
+       id="rect6149-5"
+       width="121.21828"
+       height="42.426414"
+       x="280.06479"
+       y="243.33447" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer9"
+     inkscape:label="range"
+     style="display:inline">
+    <rect
+       style="fill:#0069ff;fill-opacity:0.4745098;stroke:none;display:inline"
+       id="rect6124-8"
+       width="140"
+       height="42.142857"
+       x="532.51093"
+       y="144.89984" />
+    <text
+       xml:space="preserve"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#0069ff;fill-opacity:0.80803576;stroke:none;display:inline;font-family:Comic Sans MS;-inkscape-font-specification:Comic Sans MS"
+       x="594.10394"
+       y="127.60641"
+       id="text4794"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4796"
+         x="594.10394"
+         y="127.60641">to text</tspan></text>
+    <path
+       style="fill:none;stroke:#0069ff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.4745098;stroke-dasharray:none;display:inline"
+       d="m 589.82136,117.97536 c 0,0 -11.38856,-1.23571 -19.17058,7.6987 -7.78204,8.93441 -5.70685,19.6608 -5.70685,19.6608"
+       id="path6147-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="czc" />
+    <rect
+       style="fill:none;stroke:#0069ff;stroke-width:3.00029993;stroke-miterlimit:4;stroke-opacity:0.4745098;stroke-dasharray:3.0003, 3.0003;stroke-dashoffset:0;display:inline"
+       id="rect6149-5-2"
+       width="42.426369"
+       height="45.456848"
+       x="379.77228"
+       y="193.24539" />
+    <rect
+       style="fill:none;stroke:#0069ff;stroke-width:3.00029993;stroke-miterlimit:4;stroke-opacity:0.4745098;stroke-dasharray:3.0003, 3.0003;stroke-dashoffset:0;display:inline"
+       id="rect6252"
+       width="572.75653"
+       height="45.961945"
+       x="131.27477"
+       y="292.24036" />
+  </g>
+</svg>
